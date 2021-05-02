@@ -44,6 +44,19 @@ body {
   font-weight: 400;
 }
 
+.h1 .frontEnd {
+  margin-right: 15px;
+}
+
+.h1 .webDev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 @media (max-width: 700px) {
   .h1 h1 {
     font-size: 40px;
@@ -52,8 +65,13 @@ body {
     font-size: 30px;
   }
   .h1 .webDev {
-    display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
   .h1 h3 {
     font-size: 20px;
