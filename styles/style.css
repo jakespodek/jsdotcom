@@ -51,6 +51,10 @@ body {
   .h1 h2 {
     font-size: 30px;
   }
+  .h1 .webDev {
+    display: flex;
+    flex-direction: column;
+  }
   .h1 h3 {
     font-size: 20px;
   }
