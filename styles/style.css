@@ -22,7 +22,7 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  top: 35vh;
+  top: 25vh;
   left: 5vw;
   line-height: 0.1;
   color: #cacaca;
