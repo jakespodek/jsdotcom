@@ -11,11 +11,16 @@ body {
     position: relative;
 }
 
-.h1 {
+a {
+    color: #FFC627;
+}
+
+.allTheStuff {
     position: absolute;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-end;
+    justify-content: space-between;
     top: 25vh;
     left: 5vw;
     line-height: 0.1;
@@ -26,30 +31,63 @@ body {
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 10vh;
-    h1 {
-    font-size: 60px;
-    font-weight: 600;
+
+    .message {
+        width: 40%;
+        // border: 1px solid red;
+        margin: 0 auto;
+        // padding: 50px;
+        line-height: 1.6;
+        font-size: 30px;
+        
     }
-    h2 {
-    font-size: 50px;
-    font-weight: 500;
+
+    .headers {
+        // width: 55%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+        // border: 1px solid red;
+        h1 {
+            font-size: 60px;
+            font-weight: 600;
+        }
+        h2 {
+            font-size: 50px;
+            font-weight: 500;
+        }
+        h3 {
+            font-size: 40px;
+            font-weight: 400;
+        }
     }
-    h3 {
-    font-size: 40px;
-    font-weight: 400;
+    
+}
+
+@media (max-width: 1000px) {
+    .allTheStuff {
+        flex-direction: column;
+        .message {
+            width: 95%;
+            margin-bottom: 20px;
+        }
     }
 }
 
 @media (max-width: 700px) {
-    .h1 {
-        h1 {
-        font-size: 40px;
-        }
-        h2 {
-            font-size: 25px;
-        } 
-        h3 {
-            font-size: 20px;
+    .allTheStuff {
+        top: 15vh;
+        .headers {
+            h1 {
+                font-size: 40px;
+            }
+            h2 {
+                font-size: 25px;
+            } 
+            h3 {
+                font-size: 20px;
+            }
         }
     }   
 }
