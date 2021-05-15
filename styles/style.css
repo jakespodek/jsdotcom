@@ -94,7 +94,7 @@ a {
 
 @media (max-width: 700px) {
   .allTheStuff {
-    top: 5vh;
+    top: 1vh;
   }
   .allTheStuff .headers h1 {
     font-size: 40px;
