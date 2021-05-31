@@ -12,6 +12,7 @@ body {
 
 a {
   color: #FFC627;
+  color: orangered;
   text-decoration: none;
 }
 
@@ -95,7 +96,7 @@ a {
 
 @media (max-width: 700px) {
   .allTheStuff {
-    top: 1vh;
+    top: 10vh;
   }
   .allTheStuff .headers h1 {
     font-size: 40px;
