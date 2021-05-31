@@ -1,14 +1,83 @@
-@import './partials/setup.scss';
-@import './partials/typography.scss';
+@import "./partials/setup";
+@import "./partials/variables";
+@import "./partials/typography";
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
 
 .wrapper {
     max-width: 1400px;
     width: 80%;
     margin: 0 auto;
+    // border: 1px solid red;
+}
+
+header,
+section {
+    padding: 10rem 0;
+}
+
+/////// HEADER ///////
+header {
+    background: $paleBrown;
+    ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+    }
+    a {
+        text-decoration: none;
+        color: $black;
+        font-size: 1.8rem;
+    }
+    li {
+        padding-left: 2rem;
+    }
+    li:nth-of-type(1) {
+        padding-left: 0;
+    }
 }
 
 .asteroid {
-    color: #dc965a;
-    width: 10rem;
+    color: $themeColor;
+    display: inline;
+    display: none;
+    svg {
+        width: 10rem;
+    }
 }
 
+
+
+
+/////// ABOUT ///////
+.about {
+    background-color: $white;
+}
+
+
+/////// SKILLS ///////
+.skills {
+    background-color: $paleBrown;
+}
+
+
+/////// PROJECTS ///////
+.projects {
+    background-color: $white;
+}
+
+/////// CONTACT ///////
+.contact {
+    background-color: $paleBrown;
+}
+
+/////// FOOTER ///////
+footer {
+    background-color: $black;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+        color: $white;
+    }
+}
