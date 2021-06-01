@@ -48,7 +48,6 @@ header {
         // cursor: default;
     }
     ul {
-        list-style: none;
         padding: 0;
         display: flex;
     }
@@ -129,6 +128,21 @@ header {
 /////// SKILLS ///////
 .skills {
     background-color: $paleBrown;
+    .skillsIcons {
+        margin: 4rem auto 0;
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        p {
+            text-align: center;
+            font-size: 1.6rem;
+        }
+    }
+    i {
+        font-size: 7rem;
+        margin: 2rem 4rem;
+        // color: $themeColor;
+    }
 }
 
 
