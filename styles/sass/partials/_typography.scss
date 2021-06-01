@@ -6,24 +6,33 @@ body {
     font-family: "Nunito", monospac;
 }
 
+h1,
+h2,
+h3 {
+    margin: 1rem 0;
+}
+
 h1 {
-    font-size: 6rem;
+    font-size: 10rem;
 }
 
 h2 {
     font-size: 3rem;
-    // margin: 0;
 }
 
+.navName,
 h3 {
     font-size: 2.4rem;
 }
 
 p {
     font-size: 1.8rem;
-    // margin: 0;
 }
 
 footer p {
     font-size: 1.6rem;
+}
+
+nav a {
+    font-size: 2rem;
 }

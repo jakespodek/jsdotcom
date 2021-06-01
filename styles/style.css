@@ -244,14 +244,21 @@ body {
   font-family: "Nunito", monospac;
 }
 
+h1,
+h2,
+h3 {
+  margin: 1rem 0;
+}
+
 h1 {
-  font-size: 6rem;
+  font-size: 10rem;
 }
 
 h2 {
   font-size: 3rem;
 }
 
+.navName,
 h3 {
   font-size: 2.4rem;
 }
@@ -264,19 +271,47 @@ footer p {
   font-size: 1.6rem;
 }
 
+nav a {
+  font-size: 2rem;
+}
+
 .wrapper {
   max-width: 1400px;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
 header,
 section {
-  padding: 10rem 0;
+  padding: 5rem 0;
 }
 
 header {
   background: #fdd5b1;
+  padding-top: 0.1rem;
+  height: 10vh;
+  line-height: 2;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+header :first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .navName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  color: #DC965A;
 }
 
 header ul {
@@ -290,15 +325,35 @@ header ul {
 header a {
   text-decoration: none;
   color: #000;
-  font-size: 1.8rem;
+}
+
+header a:hover,
+header a:focus {
+  color: #DC965A;
 }
 
 header li {
-  padding-left: 2rem;
+  padding-left: 5rem;
 }
 
 header li:nth-of-type(1) {
   padding-left: 0;
+}
+
+.landing {
+  background-color: #fdd5b1;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 25vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .asteroid {
