@@ -255,7 +255,7 @@ h1 {
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 4.8rem;
 }
 
 .navName,
@@ -287,9 +287,9 @@ section {
 }
 
 header {
-  background: #fdd5b1;
-  padding-top: 0.1rem;
-  height: 10vh;
+  background: #FEF6EE;
+  padding-top: 0;
+  height: 6rem;
   line-height: 2;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -341,8 +341,8 @@ header li:nth-of-type(1) {
 }
 
 .landing {
-  background-color: #fdd5b1;
-  height: 90vh;
+  background-color: #FEF6EE;
+  height: calc(100vh - 6rem);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -367,11 +367,53 @@ header li:nth-of-type(1) {
 }
 
 .about {
-  background-color: #FFF;
+  background-color: transparent;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 10vw;
+  position: relative;
+}
+
+.about :first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .headshot {
+  width: 40%;
+  max-width: 50rem;
+  -webkit-box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.about .headshot img {
+  width: 100%;
+  border: 0.8rem solid #FFF;
+}
+
+.about .aboutText {
+  width: 50vw;
+  padding: 0 2vw 0 10vw;
+}
+
+.about .leftBox {
+  height: 100%;
+  background-color: #DC965A;
+  width: 40%;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .skills {
-  background-color: #fdd5b1;
+  background-color: #FEF6EE;
 }
 
 .projects {
@@ -379,7 +421,7 @@ header li:nth-of-type(1) {
 }
 
 .contact {
-  background-color: #fdd5b1;
+  background-color: #FEF6EE;
 }
 
 footer {
