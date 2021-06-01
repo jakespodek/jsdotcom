@@ -286,6 +286,20 @@ section {
   padding: 5rem 0;
 }
 
+.underline {
+  position: relative;
+}
+
+.underline::after {
+  position: absolute;
+  content: "";
+  width: 3.1rem;
+  height: 0.3rem;
+  background: #DC965A;
+  left: 0;
+  bottom: -0.5rem;
+}
+
 header {
   background: #FEF6EE;
   padding-top: 0;
