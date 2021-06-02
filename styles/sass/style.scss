@@ -130,18 +130,27 @@ header {
     background-color: $paleBrown;
     .skillsIcons {
         margin: 4rem auto 0;
-        width: 80%;
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
+        li {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 17rem;
+            height: 17rem;
+        }
         p {
             text-align: center;
             font-size: 1.6rem;
         }
-    }
-    i {
-        font-size: 7rem;
-        margin: 2rem 4rem;
-        // color: $themeColor;
+        i {
+            font-size: 7rem;
+        }
+        i:hover {
+            color: $themeColor;
+        }
     }
 }
 
