@@ -406,8 +406,8 @@ header li a:focus {
 .about .headshot {
   width: 60%;
   max-width: 55rem;
-  -webkit-box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 2.5rem 2rem -1.2rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2.5rem 2rem -1.2rem rgba(0, 0, 0, 0.5);
 }
 
 .about .headshot img {
@@ -491,15 +491,27 @@ header li a:focus {
 }
 
 .projects .project .projectImage {
-  width: 50%;
+  width: 40%;
+  border-radius: 3rem;
 }
 
 .projects .project .projectImage img {
   width: 100%;
 }
 
+.projects .project .muckImage,
+.projects .project .backronymImage {
+  -webkit-box-shadow: -3rem 2rem #39397e, -3rem -2rem #39397e, -5rem 2rem 1.5rem -0.5rem rgba(0, 0, 0, 0.5);
+          box-shadow: -3rem 2rem #39397e, -3rem -2rem #39397e, -5rem 2rem 1.5rem -0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.projects .project .covidImage {
+  -webkit-box-shadow: 3rem 2rem #39397e, 3rem -2rem #39397e, 5rem 2rem 1.5rem -0.5rem rgba(0, 0, 0, 0.5);
+          box-shadow: 3rem 2rem #39397e, 3rem -2rem #39397e, 5rem 2rem 1.5rem -0.5rem rgba(0, 0, 0, 0.5);
+}
+
 .projects .project .projectText {
-  width: 50%;
+  width: 60%;
   padding: 6rem;
 }
 

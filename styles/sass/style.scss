@@ -108,7 +108,7 @@ header {
     .headshot {
         width: 60%;
         max-width: 55rem;
-        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 2.5rem 2rem -1.2rem rgba(0, 0, 0, 0.5);
         img {
             width: 100%;
             border: 0.8rem solid $white;
@@ -172,14 +172,22 @@ header {
         margin-top: 10vh;
         // border: 1px solid red;
         .projectImage {
-            width: 50%;
+            width: 40%;
+            border-radius: 3rem;
             img {
                 width: 100%;
                 // border: 1px solid blue;
             }
         }
+        .muckImage,
+        .backronymImage {
+            box-shadow: -3rem 2rem $themeColor, -3rem -2rem $themeColor, -5rem 2rem 1.5rem -0.5rem rgba(0, 0, 0, 0.5);
+        }
+        .covidImage {
+            box-shadow: 3rem 2rem $themeColor, 3rem -2rem $themeColor, 5rem 2rem 1.5rem -0.5rem rgba(0, 0, 0, 0.5);
+        }
         .projectText {
-            width: 50%;
+            width: 60%;
             padding: 6rem;
         }
     }
