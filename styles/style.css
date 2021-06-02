@@ -304,6 +304,15 @@ section {
   bottom: -0.5rem;
 }
 
+i:hover {
+  color: #39397e;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
 header {
   background: #FEF6EE;
   padding-top: 0;
@@ -346,8 +355,6 @@ header li {
 }
 
 header li a {
-  text-decoration: none;
-  color: #000;
   letter-spacing: 0.235px;
 }
 
@@ -373,6 +380,18 @@ header li a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+}
+
+.landing .landingIcons {
+  position: absolute;
+  font-size: 3.5rem;
+  right: 5vw;
+  bottom: 2.5vw;
+}
+
+.landing .landingIcons i {
+  margin-left: 2rem;
 }
 
 .asteroid {
@@ -471,16 +490,13 @@ header li a:focus {
   font-size: 7rem;
 }
 
-.skills .skillsIcons i:hover {
-  color: #39397e;
-}
-
 .projects {
   background-color: #FFF;
+  padding-bottom: 10rem;
 }
 
 .projects h2 {
-  margin-bottom: 4rem;
+  margin-bottom: 10rem;
 }
 
 .projects .project {
@@ -520,7 +536,7 @@ header li a:focus {
 }
 
 footer {
-  background-color: #000;
+  background-color: #39397e;
   height: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;

@@ -3,6 +3,7 @@
 @import "./partials/typography";
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
 
+/////// GLOBAL ///////
 .wrapper {
     max-width: 1400px;
     width: 90%;
@@ -14,6 +15,7 @@ header,
 section {
     padding: 5rem 0;
 }
+
 
 .underline {
     position: relative;
@@ -27,6 +29,15 @@ section {
     background: $themeColor;
     left: 0;
     bottom: -0.5rem;
+}
+
+i:hover {
+    color: $themeColor;
+}
+
+a {
+    text-decoration: none;
+    color: $black;
 }
 
 /////// HEADER ///////
@@ -56,8 +67,6 @@ header {
     li {
         padding-left: 7rem;
         a {
-            text-decoration: none;
-            color: $black;
             letter-spacing: 0.235px
         }
     }
@@ -82,6 +91,16 @@ header {
     padding-top: 25vh;
     // justify-content: center;
     align-items: center;
+    position: relative;
+    .landingIcons {
+        position: absolute;
+        font-size: 3.5rem;
+        right: 5vw;
+        bottom: 2.5vw;
+        i {
+            margin-left: 2rem;
+        }
+    }
 }
 
 .asteroid {
@@ -154,9 +173,6 @@ header {
         i {
             font-size: 7rem;
         }
-        i:hover {
-            color: $themeColor;
-        }
     }
 }
 
@@ -164,8 +180,9 @@ header {
 /////// PROJECTS ///////
 .projects {
     background-color: $white;
+    padding-bottom: 10rem;
     h2 {
-        margin-bottom: 4rem;
+        margin-bottom: 10rem;
     }
     .project {
         display: flex;
@@ -200,7 +217,7 @@ header {
 
 /////// FOOTER ///////
 footer {
-    background-color: $black;
+    background-color: $themeColor;
     height: 5rem;
     display: flex;
     justify-content: center;
