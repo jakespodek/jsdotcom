@@ -164,6 +164,25 @@ header {
 /////// PROJECTS ///////
 .projects {
     background-color: $white;
+    h2 {
+        margin-bottom: 4rem;
+    }
+    .project {
+        display: flex;
+        margin-top: 10vh;
+        // border: 1px solid red;
+        .projectImage {
+            width: 50%;
+            img {
+                width: 100%;
+                // border: 1px solid blue;
+            }
+        }
+        .projectText {
+            width: 50%;
+            padding: 6rem;
+        }
+    }
 }
 
 /////// CONTACT ///////
