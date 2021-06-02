@@ -132,7 +132,32 @@
         <section id="contact" class="contact">
             <div class="wrapper">
                 <h2 class="underline">Contact</h2>
-                
+                <div class="contactContent">
+                    <div class="contactText">
+                        <p>Contact me!</p>
+                        <a href="mailto:jake@jakespodek.com">jake@jakespodek.com</a>
+                        <div class="contactIcons">
+                            <a href="https://github.com/jakespodek" target="_blank" rel="noopener noreferrer"><i class="devicon-github-original"
+                                    alt="a link to my GitHub profile"></i></a>
+                            <a href="https://www.linkedin.com/in/jakespodek/" target="_blank" rel="noopener noreferrer"><i
+                                    class="devicon-linkedin-plain" alt="a link to my LinkedIn profile"></i></a>
+                            <a href="mailto:jake@jakespodek.com"><i class="fas fa-envelope" alt="a link to sending me an email"></i></a>
+                        </div>
+                    </div>
+
+                    <form action="#" method="#" class="contactUs" name="contactUs" data-netlify="true">
+                        <label for="userName" class="sr-only">Enter your name:</label>
+                        <input type="text" id="userName" name="userName" placeholder="Name">
+                    
+                        <label for="userEmail" class="sr-only">Enter your email:</label>
+                        <input type="email" id="userEmail" name="userEmail" placeholder="Email">
+                    
+                        <label for="userMessage" class="sr-only">Enter your message:</label>
+                        <textarea name="userMessage" id="userMessage" placeholder="Message" cols="70" rows="5"></textarea>
+
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
             </div>
         </section>
     </main>

@@ -535,6 +535,111 @@ header li a:focus {
   background-color: #FEF6EE;
 }
 
+.contact .contactContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact h2 {
+  margin-bottom: 6rem;
+}
+
+.contact p {
+  margin: 3rem 0;
+}
+
+.contact a {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.contact a:hover,
+.contact a:focus {
+  color: #39397e;
+  text-decoration: underline;
+}
+
+.contact i {
+  font-size: 3.5rem;
+  margin-top: 3rem;
+  margin-right: 2rem;
+}
+
+.contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 2rem;
+  max-width: 50vw;
+}
+
+.contact form input,
+.contact form textarea,
+.contact form button {
+  padding: 1rem;
+  border: 0.2rem solid #39397e;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+  font-family: "Nunito", monospac;
+}
+
+.contact form input[type="text"]::-webkit-input-placeholder,
+.contact form input[type="email"]::-webkit-input-placeholder,
+.contact form textarea::-webkit-input-placeholder {
+  color: #39397e;
+  opacity: 0.5;
+  font-family: "Nunito", monospac;
+}
+
+.contact form input[type="text"]:-ms-input-placeholder,
+.contact form input[type="email"]:-ms-input-placeholder,
+.contact form textarea:-ms-input-placeholder {
+  color: #39397e;
+  opacity: 0.5;
+  font-family: "Nunito", monospac;
+}
+
+.contact form input[type="text"]::-ms-input-placeholder,
+.contact form input[type="email"]::-ms-input-placeholder,
+.contact form textarea::-ms-input-placeholder {
+  color: #39397e;
+  opacity: 0.5;
+  font-family: "Nunito", monospac;
+}
+
+.contact form input[type="text"]::placeholder,
+.contact form input[type="email"]::placeholder,
+.contact form textarea::placeholder {
+  color: #39397e;
+  opacity: 0.5;
+  font-family: "Nunito", monospac;
+}
+
+.contact form button {
+  background-color: #39397e;
+  color: #FFF;
+  cursor: pointer;
+  margin: 0 auto;
+  padding: 1rem 5rem;
+}
+
+.contact form button:hover,
+.contact form button:focus {
+  background-color: #FFF;
+  color: #39397e;
+}
+
 footer {
   background-color: #39397e;
   height: 5rem;
