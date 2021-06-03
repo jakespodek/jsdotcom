@@ -546,10 +546,6 @@ header li a:focus {
   margin-right: 2rem;
 }
 
-.projects .project .projectIcons p {
-  display: none;
-}
-
 .projects .project ul {
   padding: 0;
 }
