@@ -531,6 +531,22 @@ header li a:focus {
   padding: 6rem;
 }
 
+.projects a {
+  font-size: 2rem;
+  background-color: #39397e;
+  color: #FFF;
+  cursor: pointer;
+  padding: 1rem 5rem;
+  border: 0.2rem solid #39397e;
+  border-radius: 0.5rem;
+}
+
+.projects a:hover,
+.projects a:focus {
+  background-color: #FFF;
+  color: #39397e;
+}
+
 .contact {
   background-color: #FEF6EE;
 }

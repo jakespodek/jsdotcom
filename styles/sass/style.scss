@@ -208,6 +208,21 @@ header {
             padding: 6rem;
         }
     }
+    a {
+        font-size: 2rem;
+        background-color: $themeColor;
+        color: $white;
+        cursor: pointer;
+        // margin: 0 auto;
+        padding: 1rem 5rem;
+        border: 0.2rem solid $themeColor;
+        border-radius: 0.5rem;
+    }
+    a:hover,
+    a:focus {
+        background-color: $white;
+        color: $themeColor;
+    }
 }
 
 /////// CONTACT ///////
