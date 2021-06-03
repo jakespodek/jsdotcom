@@ -1,1 +1,1 @@
-console.log('Hire me!');
+console.log('%c Hire me!', 'color: orangered; font-weight: bold; font-size: 14px');
