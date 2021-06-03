@@ -16,3 +16,5 @@ app.init = () => {
     console.log('Hire me!');
     app.SelectForm();
 }
+
+app.init();
