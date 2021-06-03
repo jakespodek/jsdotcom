@@ -40,6 +40,10 @@ a {
     color: $black;
 }
 
+p {
+    line-height: 1.8;
+}
+
 /////// HEADER ///////
 header {
     background: $paleBrown;
@@ -198,7 +202,8 @@ header {
         }
         .muckImage,
         .backronymImage {
-            box-shadow: -3rem 2rem $themeColor, -3rem -2rem $themeColor, -5rem 2rem 1.5rem -0.5rem rgba(0, 0, 0, 0.5);
+            // box-shadow: -3rem 2rem $themeColor, -3rem -2rem $themeColor, -5rem 2rem 1.5rem -0.5rem rgba(0, 0, 0, 0.5);
+            box-shadow: -3rem 2rem $themeColor, -3rem 1rem $themeColor, -5rem 2rem 1.5rem -0.5rem rgba(0, 0, 0, 0.5);
         }
         .covidImage {
             box-shadow: 3rem 2rem $themeColor, 3rem -2rem $themeColor, 5rem 2rem 1.5rem -0.5rem rgba(0, 0, 0, 0.5);
@@ -207,21 +212,44 @@ header {
             width: 60%;
             padding: 6rem;
         }
-    }
-    a {
-        font-size: 2rem;
-        background-color: $themeColor;
-        color: $white;
-        cursor: pointer;
-        // margin: 0 auto;
-        padding: 1rem 5rem;
-        border: 0.2rem solid $themeColor;
-        border-radius: 0.5rem;
-    }
-    a:hover,
-    a:focus {
-        background-color: $white;
-        color: $themeColor;
+        .projectIcons {
+            display: flex;
+            font-size: 3.5rem;
+            i {
+                margin-right: 2rem;
+            }
+            p {
+                display: none;
+            }
+        }
+        ul {
+            padding: 0;
+        }
+        a {
+            font-weight: 600;
+        }
+        .projectLinks {
+            margin-top: 5rem;
+        }
+        .projectLinks a {
+            font-size: 2rem;
+            background-color: $themeColor;
+            color: $white;
+            cursor: pointer;
+            font-weight: 600;
+            padding: 1rem 5rem;
+            border: 0.2rem solid $themeColor;
+            border-radius: 0.5rem;
+            margin-right: 3rem;
+        }
+        a:hover,
+        a:focus {
+            color: $themeColor;
+        }
+        .projectLinks a:hover,
+        .projectLinks a:focus {
+            background-color: $white;
+        }
     }
 }
 
@@ -282,6 +310,7 @@ header {
             cursor: pointer;
             margin: 0 auto;
             padding: 1rem 5rem;
+            font-weight: 600;
         }
         button:hover,
         button:focus {
@@ -327,7 +356,7 @@ footer {
         padding: 1rem 5rem;
         border: 0.2rem solid $themeColor;
         border-radius: 0.5rem;
-
+        font-weight: 600;
     }
     a:hover,
     a:focus {

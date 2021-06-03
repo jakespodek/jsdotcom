@@ -313,6 +313,10 @@ a {
   color: #000;
 }
 
+p {
+  line-height: 1.8;
+}
+
 header {
   background: #FEF6EE;
   padding-top: 0;
@@ -517,8 +521,8 @@ header li a:focus {
 
 .projects .project .muckImage,
 .projects .project .backronymImage {
-  -webkit-box-shadow: -3rem 2rem #39397e, -3rem -2rem #39397e, -5rem 2rem 1.5rem -0.5rem rgba(0, 0, 0, 0.5);
-          box-shadow: -3rem 2rem #39397e, -3rem -2rem #39397e, -5rem 2rem 1.5rem -0.5rem rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: -3rem 2rem #39397e, -3rem 1rem #39397e, -5rem 2rem 1.5rem -0.5rem rgba(0, 0, 0, 0.5);
+          box-shadow: -3rem 2rem #39397e, -3rem 1rem #39397e, -5rem 2rem 1.5rem -0.5rem rgba(0, 0, 0, 0.5);
 }
 
 .projects .project .covidImage {
@@ -531,20 +535,53 @@ header li a:focus {
   padding: 6rem;
 }
 
-.projects a {
+.projects .project .projectIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 3.5rem;
+}
+
+.projects .project .projectIcons i {
+  margin-right: 2rem;
+}
+
+.projects .project .projectIcons p {
+  display: none;
+}
+
+.projects .project ul {
+  padding: 0;
+}
+
+.projects .project a {
+  font-weight: 600;
+}
+
+.projects .project .projectLinks {
+  margin-top: 5rem;
+}
+
+.projects .project .projectLinks a {
   font-size: 2rem;
   background-color: #39397e;
   color: #FFF;
   cursor: pointer;
+  font-weight: 600;
   padding: 1rem 5rem;
   border: 0.2rem solid #39397e;
   border-radius: 0.5rem;
+  margin-right: 3rem;
 }
 
-.projects a:hover,
-.projects a:focus {
-  background-color: #FFF;
+.projects .project a:hover,
+.projects .project a:focus {
   color: #39397e;
+}
+
+.projects .project .projectLinks a:hover,
+.projects .project .projectLinks a:focus {
+  background-color: #FFF;
 }
 
 .contact {
@@ -648,6 +685,7 @@ header li a:focus {
   cursor: pointer;
   margin: 0 auto;
   padding: 1rem 5rem;
+  font-weight: 600;
 }
 
 .contact form button:hover,
@@ -705,6 +743,7 @@ footer p {
   padding: 1rem 5rem;
   border: 0.2rem solid #39397e;
   border-radius: 0.5rem;
+  font-weight: 600;
 }
 
 .thanks a:hover,
