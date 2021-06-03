@@ -460,6 +460,7 @@ header li a:focus {
 .skills .skillsIcons {
   margin: 4rem auto 0;
   width: 100%;
+  width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -746,4 +747,22 @@ footer p {
 .thanks a:focus {
   background-color: #FFF;
   color: #39397e;
+}
+
+@media (max-width: 1350px) {
+  .skills .skillsIcons {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .skills .skillsIcons {
+    width: 80%;
+  }
+}
+
+@media (max-width: 780px) {
+  .skills .skillsIcons {
+    width: 100%;
+  }
 }
