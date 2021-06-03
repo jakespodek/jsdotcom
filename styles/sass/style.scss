@@ -287,3 +287,36 @@ footer {
         color: $white;
     }
 }
+
+/////// THANKS ///////
+.thanksBody {
+    background-color: $paleBrown;
+}
+.thanks {
+    background-color: $paleBrown;
+    height: calc(100vh - 6rem);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h1 {
+        font-size: 6rem;
+        margin-bottom: 5rem;
+    }
+    a {
+        font-size: 3rem;
+        background-color: $themeColor;
+        color: $white;
+        cursor: pointer;
+        margin: 0 auto;
+        padding: 1rem 5rem;
+        border: 0.2rem solid $themeColor;
+        border-radius: 0.5rem;
+
+    }
+    a:hover,
+    a:focus {
+        background-color: $white;
+        color: $themeColor;
+    }
+}
