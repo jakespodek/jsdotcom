@@ -145,15 +145,15 @@
                         </div>
                     </div>
 
-                    <form method="POST" name="contact" data-netlify="true">
+                    <form action="/" method="POST" name="contact" data-netlify="true">
                         <label for="userName" class="sr-only">Enter your name:</label>
-                        <input type="text" id="userName" name="userName" placeholder="Name">
+                        <input type="text" id="userName" name="userName" placeholder="Name" required>
                     
                         <label for="userEmail" class="sr-only">Enter your email:</label>
-                        <input type="email" id="userEmail" name="userEmail" placeholder="Email">
+                        <input type="email" id="userEmail" name="userEmail" placeholder="Email" required>
                     
                         <label for="userMessage" class="sr-only">Enter your message:</label>
-                        <textarea name="userMessage" id="userMessage" placeholder="Message" cols="70" rows="5"></textarea>
+                        <textarea name="userMessage" id="userMessage" placeholder="Message" cols="70" rows="5" required></textarea>
 
                         <button type="submit">Send</button>
                     </form>
