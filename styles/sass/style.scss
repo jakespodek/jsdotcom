@@ -5,8 +5,8 @@
 
 /////// GLOBAL ///////
 .wrapper {
-    max-width: 1400px;
-    width: 90%;
+    max-width: 1700px;
+    width: 85%;
     margin: 0 auto;
     // border: 1px solid red;
 }
@@ -145,6 +145,14 @@ header {
     .aboutText {
         width: 50vw;
         padding: 0 2vw 0 7.5vw;
+        a {
+            display: inline;
+            font-weight: 600;
+        }
+        a:focus,
+        a:hover {
+            color: $themeColor;
+        }
     }
     .leftBox {
         height: 100%;

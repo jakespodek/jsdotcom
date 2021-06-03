@@ -280,8 +280,8 @@ ul {
 }
 
 .wrapper {
-  max-width: 1400px;
-  width: 90%;
+  max-width: 1700px;
+  width: 85%;
   margin: 0 auto;
 }
 
@@ -441,6 +441,16 @@ header li a:focus {
 .about .aboutText {
   width: 50vw;
   padding: 0 2vw 0 7.5vw;
+}
+
+.about .aboutText a {
+  display: inline;
+  font-weight: 600;
+}
+
+.about .aboutText a:focus,
+.about .aboutText a:hover {
+  color: #39397e;
 }
 
 .about .leftBox {
