@@ -652,7 +652,6 @@ header li a:focus {
 .contact a:hover,
 .contact a:focus {
   color: #39397e;
-  text-decoration: underline;
 }
 
 .contact i {
