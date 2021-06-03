@@ -318,7 +318,7 @@ p {
 }
 
 header {
-  background: #FEF6EE;
+  background: #FAEBD7;
   padding-top: 0;
   height: 6rem;
   line-height: 2;
@@ -371,7 +371,7 @@ header li a:focus {
 }
 
 .landing {
-  background-color: #FEF6EE;
+  background-color: #FAEBD7;
   height: calc(100vh - 6rem);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -454,7 +454,7 @@ header li a:focus {
 }
 
 .skills {
-  background-color: #FEF6EE;
+  background-color: #FAEBD7;
 }
 
 .skills .skillsIcons {
@@ -513,7 +513,12 @@ header li a:focus {
 
 .projects .project .projectImage {
   width: 40%;
-  border-radius: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .projects .project .projectImage img {
@@ -524,11 +529,13 @@ header li a:focus {
 .projects .project .backronymImage {
   -webkit-box-shadow: -3rem 2rem #39397e, -3rem 1rem #39397e, -5rem 2rem 1.5rem -0.5rem rgba(0, 0, 0, 0.5);
           box-shadow: -3rem 2rem #39397e, -3rem 1rem #39397e, -5rem 2rem 1.5rem -0.5rem rgba(0, 0, 0, 0.5);
+  border-radius: 1rem 3rem 1rem 3rem;
 }
 
 .projects .project .covidImage {
-  -webkit-box-shadow: 3rem 2rem #39397e, 3rem -2rem #39397e, 5rem 2rem 1.5rem -0.5rem rgba(0, 0, 0, 0.5);
-          box-shadow: 3rem 2rem #39397e, 3rem -2rem #39397e, 5rem 2rem 1.5rem -0.5rem rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 3rem 2rem #39397e, 3rem 1rem #39397e, 5rem 2rem 1.5rem -0.5rem rgba(0, 0, 0, 0.5);
+          box-shadow: 3rem 2rem #39397e, 3rem 1rem #39397e, 5rem 2rem 1.5rem -0.5rem rgba(0, 0, 0, 0.5);
+  border-radius: 3rem 1rem 3rem 1rem;
 }
 
 .projects .project .projectText {
@@ -582,7 +589,7 @@ header li a:focus {
 }
 
 .contact {
-  background-color: #FEF6EE;
+  background-color: #FAEBD7;
 }
 
 .contact .contactContent {
@@ -592,9 +599,30 @@ header li a:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+
+.contact .contactContent .contactText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact .contactContent .contactText .emojis {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+}
+
+.contact .contactContent .contactText .emojis p {
+  font-size: 4rem;
 }
 
 .contact h2 {
@@ -602,7 +630,8 @@ header li a:focus {
 }
 
 .contact p {
-  margin: 3rem 0;
+  margin: 0 0 3rem 0;
+  width: 70%;
 }
 
 .contact a {
@@ -710,11 +739,11 @@ footer p {
 }
 
 .thanksBody {
-  background-color: #FEF6EE;
+  background-color: #FAEBD7;
 }
 
 .thanks {
-  background-color: #FEF6EE;
+  background-color: #FAEBD7;
   height: calc(100vh - 6rem);
   text-align: center;
   display: -webkit-box;
