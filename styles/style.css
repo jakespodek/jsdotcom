@@ -673,14 +673,11 @@ footer p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .thanks h1 {
   font-size: 6rem;
-  margin-bottom: 5rem;
+  margin: 20vh 0 15vh;
 }
 
 .thanks a {
