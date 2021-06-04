@@ -430,14 +430,52 @@ footer {
 }
 
 @media (max-width: 825px) {
+    .about {
+        :first-child {
+            flex-direction: column;
+        }
+        .leftBox {
+            height: 40%;
+            width: 100%;
+        }
+        .headshot {
+            width: 100%;
+            margin-bottom: 5rem;
+            img {
+                width: 100%;
+            }
+        }
+        .aboutText {
+            padding: 0;
+            
+            h2 {
+                font-size: 4rem;
+                display: initial;
+            }
+            h3 {
+                font-size: 2rem;
+            }
+        }
+    }
     .skills {
         .skillsIcons {
             width: 90%;
         }
     }
+    // .contact {
+    //     .emojis p, 
+    //     .contactLinks {
+    //         display: none;
+    //     }
+    // }
 }
 
 @media (max-width: 735px) {
+    .about {
+        .leftBox {
+            height: 35%;
+        }
+    }
     .skills {
         .skillsIcons {
             width: 100%;
@@ -446,11 +484,16 @@ footer {
 }
 
 @media (max-width: 666px) {
+    .about {
+        .aboutText {
+            width: 85%;
+        }
+    }
     .skills {
         .skillsIcons {
             width: 90%;
             li {
-                width: 13rem;
+                width: 14rem;
                 height: 13rem;
             }
             i {
@@ -460,7 +503,22 @@ footer {
     }
 }
 
+@media (max-width: 575px) {
+    .about {
+        .leftBox {
+            height: 20%;
+        }
+    }
+}
+
 @media (max-width: 400px) {
+    .about {
+        .aboutText {
+            h2 {
+                font-size: 3.5rem;
+            }
+        }
+    }
     .skills {
         .skillsIcons {
             width: 100%;
@@ -472,6 +530,19 @@ footer {
 }
 
 @media (max-width: 354px) {
+    .about {
+        .leftBox {
+            height: 15%;
+        }
+        .aboutText {
+            h2 {
+                font-size: 3rem;
+            }
+            h3 {
+                font-size: 1.8rem;
+            }
+        }
+    }
     .skills {
         .skillsIcons {
             padding: 0;
