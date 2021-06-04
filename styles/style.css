@@ -304,6 +304,11 @@ section {
   bottom: -0.5rem;
 }
 
+i {
+  -webkit-transition: color 0.3s ease-out 0.1s;
+  transition: color 0.3s ease-out 0.1s;
+}
+
 i:hover {
   color: #39397e;
 }
@@ -847,6 +852,12 @@ footer p {
 }
 
 @media (max-width: 1265px) {
+  header li {
+    padding-left: 4rem;
+  }
+  header nav a {
+    font-size: 1.6rem;
+  }
   .skills .skillsIcons {
     width: 80%;
   }
@@ -950,6 +961,13 @@ footer p {
 }
 
 @media (max-width: 666px) {
+  header nav,
+  header .navName {
+    display: none;
+  }
+  main h1 {
+    font-size: 7rem;
+  }
   .about .aboutText {
     width: 85%;
   }
@@ -995,6 +1013,9 @@ footer p {
 }
 
 @media (max-width: 430px) {
+  main h1 {
+    font-size: 5rem;
+  }
   .projects .project .projectIcons {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
