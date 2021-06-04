@@ -100,6 +100,12 @@ header {
     padding-top: 25vh;
     align-items: center;
     position: relative;
+    .arrow {
+        position: absolute;
+        bottom: 7.5vh;
+        margin: 0 auto;
+        font-size: 4rem;
+    }
     .landingIcons {
         position: absolute;
         font-size: 3.5rem;
