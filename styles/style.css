@@ -860,11 +860,18 @@ footer p {
             flex-direction: column;
   }
   .projects .project .projectImage {
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
   }
   .projects .project .projectText {
     width: 100%;
-    padding: 6rem;
+    padding: 6rem 6rem 1rem 6rem;
+  }
+  .projects .covidPositive {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
 
@@ -956,10 +963,17 @@ footer p {
   .skills .skillsIcons i {
     font-size: 5rem;
   }
-  .projects .projectLinks {
-    height: 20rem;
+  .projects .project .muckImage,
+  .projects .project .covidImage,
+  .projects .project .backronymImage {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background-color: #39397e;
   }
-  .projects .projectLinks a {
+  .projects .project .projectLinks {
+    height: 10rem;
+  }
+  .projects .project .projectLinks a {
     display: block;
     margin-bottom: 2rem;
     width: 20rem;
@@ -970,6 +984,20 @@ footer p {
 @media (max-width: 575px) {
   .about .leftBox {
     height: 20%;
+  }
+  .projects .project .projectImage {
+    width: 100%;
+  }
+  .projects .project .projectText {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .projects .project .projectIcons {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 

@@ -448,12 +448,16 @@ footer {
         .project {
             flex-direction: column;
             .projectImage {
-                width: 100%;
+                width: 80%;
+                margin: 0 auto;
             }
             .projectText {
                 width: 100%;
-                padding: 6rem;
+                padding: 6rem 6rem 1rem 6rem;
             }
+        }
+        .covidPositive {
+            flex-direction: column-reverse;
         }
     }
 }
@@ -556,18 +560,21 @@ footer {
         }
     }
     .projects {
-        // .muckImage,
-        // .covidImage,
-        // .backronymImage {
-        //     box-shadow: 0;
-        // }
-        .projectLinks {
-            height: 20rem;
-            a {
-                display: block;
-                margin-bottom: 2rem;
-                width: 20rem;
-                text-align: center;
+        .project {
+            .muckImage,
+            .covidImage,
+            .backronymImage {
+                box-shadow: none;
+                background-color: $themeColor;
+            }
+            .projectLinks {
+                height: 10rem;
+                a {
+                    display: block;
+                    margin-bottom: 2rem;
+                    width: 20rem;
+                    text-align: center;
+                }
             }
         }
     }
@@ -577,6 +584,28 @@ footer {
     .about {
         .leftBox {
             height: 20%;
+        }
+    }
+    .projects {
+        .project {
+            .projectImage {
+                width: 100%;
+                // margin: 0 auto;
+            }
+            .projectText {
+                width: 100%;
+                padding: 1rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 430px) {
+    .projects {
+        .project {
+            .projectIcons {
+                flex-wrap: wrap;
+            }
         }
     }
 }
