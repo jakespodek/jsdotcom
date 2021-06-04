@@ -102,9 +102,10 @@ header {
     position: relative;
     .arrow {
         position: absolute;
-        bottom: 7.5vh;
+        bottom: 10vh;
         margin: 0 auto;
-        font-size: 4rem;
+        font-size: 5rem;
+        animation: arrowDown 3s ease-in infinite;
     }
     .landingIcons {
         position: absolute;
@@ -114,6 +115,33 @@ header {
         i {
             margin-left: 2rem;
         }
+    }
+}
+
+@keyframes arrowDown {
+    0% {
+        bottom: 10vh;
+        opacity: 1;
+    }
+    60% {
+        bottom: 3vh;
+        opacity: 0;
+    }
+    70% {
+        bottom: 10vh;
+        opacity: 0;
+    }
+    80% {
+        bottom: 10vh;
+        opacity: 0.5;
+    }
+    90% {
+        bottom: 10vh;
+        opacity: 0.75;
+    }
+    100% {
+        bottom: 10vh;
+        opacity: 1;
     }
 }
 

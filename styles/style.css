@@ -398,9 +398,11 @@ header li a:focus {
 
 .landing .arrow {
   position: absolute;
-  bottom: 7.5vh;
+  bottom: 10vh;
   margin: 0 auto;
-  font-size: 4rem;
+  font-size: 5rem;
+  -webkit-animation: arrowDown 3s ease-in infinite;
+          animation: arrowDown 3s ease-in infinite;
 }
 
 .landing .landingIcons {
@@ -412,6 +414,60 @@ header li a:focus {
 
 .landing .landingIcons i {
   margin-left: 2rem;
+}
+
+@-webkit-keyframes arrowDown {
+  0% {
+    bottom: 10vh;
+    opacity: 1;
+  }
+  60% {
+    bottom: 3vh;
+    opacity: 0;
+  }
+  70% {
+    bottom: 10vh;
+    opacity: 0;
+  }
+  80% {
+    bottom: 10vh;
+    opacity: 0.5;
+  }
+  90% {
+    bottom: 10vh;
+    opacity: 0.75;
+  }
+  100% {
+    bottom: 10vh;
+    opacity: 1;
+  }
+}
+
+@keyframes arrowDown {
+  0% {
+    bottom: 10vh;
+    opacity: 1;
+  }
+  60% {
+    bottom: 3vh;
+    opacity: 0;
+  }
+  70% {
+    bottom: 10vh;
+    opacity: 0;
+  }
+  80% {
+    bottom: 10vh;
+    opacity: 0.5;
+  }
+  90% {
+    bottom: 10vh;
+    opacity: 0.75;
+  }
+  100% {
+    bottom: 10vh;
+    opacity: 1;
+  }
 }
 
 .asteroid {
