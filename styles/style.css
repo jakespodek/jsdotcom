@@ -1087,6 +1087,9 @@ footer p {
   main h1 {
     font-size: 5rem;
   }
+  main .landingIcons {
+    display: none;
+  }
   .projects .project .projectIcons {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
