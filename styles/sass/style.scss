@@ -11,9 +11,10 @@
     // border: 1px solid red;
 }
 
-// body {
-//     background-color: $paleBrown;
-// }
+body {
+    // background-color: $paleBrown;
+    background-color: $otherBrown;
+}
 
 header,
 section {
@@ -176,6 +177,7 @@ header {
         min-height: 50vh;
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         li {
             display: flex;
             flex-direction: column;
@@ -197,8 +199,8 @@ header {
 
 /////// PROJECTS ///////
 .projects {
-    background-color: $white;
-    // background-color: $paleBrown;
+    // background-color: $white;
+    background-color: $otherBrown;
     padding-bottom: 10rem;
     h2 {
         margin-bottom: 10rem;
@@ -573,6 +575,7 @@ footer {
     .skills {
         .skillsIcons {
             width: 90%;
+            padding-left: 0;
             li {
                 width: 14rem;
                 height: 13rem;

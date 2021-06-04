@@ -285,6 +285,10 @@ ul {
   margin: 0 auto;
 }
 
+body {
+  background-color: #FEF6EE;
+}
+
 header,
 section {
   padding: 5rem 0;
@@ -481,6 +485,9 @@ header li a:focus {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .skills .skillsIcons li {
@@ -511,7 +518,7 @@ header li a:focus {
 }
 
 .projects {
-  background-color: #FFF;
+  background-color: #FEF6EE;
   padding-bottom: 10rem;
 }
 
@@ -973,6 +980,7 @@ footer p {
   }
   .skills .skillsIcons {
     width: 90%;
+    padding-left: 0;
   }
   .skills .skillsIcons li {
     width: 14rem;
