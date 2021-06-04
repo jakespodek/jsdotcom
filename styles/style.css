@@ -852,6 +852,22 @@ footer p {
   }
 }
 
+@media (max-width: 1085px) {
+  .projects .project {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .projects .project .projectImage {
+    width: 100%;
+  }
+  .projects .project .projectText {
+    width: 100%;
+    padding: 6rem;
+  }
+}
+
 @media (max-width: 900px) {
   .about .aboutText {
     width: 60vw;
@@ -939,6 +955,15 @@ footer p {
   }
   .skills .skillsIcons i {
     font-size: 5rem;
+  }
+  .projects .projectLinks {
+    height: 20rem;
+  }
+  .projects .projectLinks a {
+    display: block;
+    margin-bottom: 2rem;
+    width: 20rem;
+    text-align: center;
   }
 }
 

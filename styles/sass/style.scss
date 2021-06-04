@@ -443,6 +443,21 @@ footer {
     }
 }
 
+@media (max-width: 1085px) {
+    .projects {
+        .project {
+            flex-direction: column;
+            .projectImage {
+                width: 100%;
+            }
+            .projectText {
+                width: 100%;
+                padding: 6rem;
+            }
+        }
+    }
+}
+
 @media (max-width: 900px) {
     .about {
         .aboutText {
@@ -537,6 +552,22 @@ footer {
             }
             i {
                 font-size: 5rem;
+            }
+        }
+    }
+    .projects {
+        // .muckImage,
+        // .covidImage,
+        // .backronymImage {
+        //     box-shadow: 0;
+        // }
+        .projectLinks {
+            height: 20rem;
+            a {
+                display: block;
+                margin-bottom: 2rem;
+                width: 20rem;
+                text-align: center;
             }
         }
     }
