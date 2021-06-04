@@ -279,6 +279,29 @@ header {
                 }
             }
         }
+        .hiddenContactText {
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            .hiddenEmojis {
+                display: flex;
+                margin: 4rem 0;
+                width: 100%;
+                justify-content: space-around;
+                align-items: center;
+                p {
+                    font-size: 4rem;
+                    width: 4rem;
+                    margin: 0;
+                }
+            }
+            .hiddenContactLinks {
+                margin: 0 auto;
+                .contactIcons {
+                    text-align: center;
+                }
+            }
+        }
     }
     h2 {
         margin-bottom: 6rem;
@@ -462,12 +485,28 @@ footer {
             width: 90%;
         }
     }
-    // .contact {
-    //     .emojis p, 
-    //     .contactLinks {
-    //         display: none;
-    //     }
-    // }
+    .contact {
+        .contactContent {
+            flex-direction: column;
+            .contactText p {
+                width: 80%;
+                margin-right: auto;
+                margin-left: auto;
+            }
+            form {
+                margin-right: auto;
+                margin-left: auto;
+                max-width: 70vw;
+            }
+            .hiddenContactText {
+                display: flex;
+            }
+        }
+        .emojis p, 
+        .contactLinks {
+            display: none;
+        }
+    }
 }
 
 @media (max-width: 735px) {
@@ -525,6 +564,11 @@ footer {
             i {
                 font-size: 4rem;
             }
+        }
+    }
+    .contact {
+        textarea {
+            height: 30rem;
         }
     }
 }

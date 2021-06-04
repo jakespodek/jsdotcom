@@ -635,6 +635,44 @@ header li a:focus {
   font-size: 4rem;
 }
 
+.contact .contactContent .hiddenContactText {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact .contactContent .hiddenContactText .hiddenEmojis {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 4rem 0;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .contactContent .hiddenContactText .hiddenEmojis p {
+  font-size: 4rem;
+  width: 4rem;
+  margin: 0;
+}
+
+.contact .contactContent .hiddenContactText .hiddenContactLinks {
+  margin: 0 auto;
+}
+
+.contact .contactContent .hiddenContactText .hiddenContactLinks .contactIcons {
+  text-align: center;
+}
+
 .contact h2 {
   margin-bottom: 6rem;
 }
@@ -852,6 +890,31 @@ footer p {
   .skills .skillsIcons {
     width: 90%;
   }
+  .contact .contactContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact .contactContent .contactText p {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .contact .contactContent form {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 70vw;
+  }
+  .contact .contactContent .hiddenContactText {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contact .emojis p,
+  .contact .contactLinks {
+    display: none;
+  }
 }
 
 @media (max-width: 735px) {
@@ -894,6 +957,9 @@ footer p {
   }
   .skills .skillsIcons i {
     font-size: 4rem;
+  }
+  .contact textarea {
+    height: 30rem;
   }
 }
 
