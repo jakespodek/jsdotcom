@@ -120,27 +120,27 @@ header {
 
 @keyframes arrowDown {
     0% {
-        bottom: 10vh;
+        bottom: 20vh;
         opacity: 1;
     }
     60% {
-        bottom: 3vh;
+        bottom: 5vh;
         opacity: 0;
     }
     70% {
-        bottom: 10vh;
+        bottom: 20vh;
         opacity: 0;
     }
     80% {
-        bottom: 10vh;
+        bottom: 20vh;
         opacity: 0.5;
     }
     90% {
-        bottom: 10vh;
+        bottom: 20vh;
         opacity: 0.75;
     }
     100% {
-        bottom: 10vh;
+        bottom: 20vh;
         opacity: 1;
     }
 }
