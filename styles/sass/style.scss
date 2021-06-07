@@ -311,30 +311,15 @@ header {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            .emojis {
-                display: flex;
-                width: 70%;
-                p {
-                    font-size: 4rem;
-                }
+            p {
+                font-size: 3.8rem;
             }
         }
         .hiddenContactText {
             display: none;
             flex-direction: column;
             justify-content: space-between;
-            .hiddenEmojis {
-                display: flex;
-                margin: 4rem 0;
-                width: 100%;
-                justify-content: space-around;
-                align-items: center;
-                p {
-                    font-size: 4rem;
-                    width: 4rem;
-                    margin: 0;
-                }
-            }
+            margin-top: 5rem;
             .hiddenContactLinks {
                 margin: 0 auto;
                 .contactIcons {
@@ -673,6 +658,7 @@ footer {
         .project {
             .projectIcons {
                 flex-wrap: wrap;
+                font-size: 3rem;
             }
         }
     }

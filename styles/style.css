@@ -699,15 +699,8 @@ header li a:focus {
           justify-content: space-between;
 }
 
-.contact .contactContent .contactText .emojis {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 70%;
-}
-
-.contact .contactContent .contactText .emojis p {
-  font-size: 4rem;
+.contact .contactContent .contactText p {
+  font-size: 3.8rem;
 }
 
 .contact .contactContent .hiddenContactText {
@@ -719,25 +712,7 @@ header li a:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.contact .contactContent .hiddenContactText .hiddenEmojis {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 4rem 0;
-  width: 100%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.contact .contactContent .hiddenContactText .hiddenEmojis p {
-  font-size: 4rem;
-  width: 4rem;
-  margin: 0;
+  margin-top: 5rem;
 }
 
 .contact .contactContent .hiddenContactText .hiddenContactLinks {
@@ -1093,6 +1068,7 @@ footer p {
   .projects .project .projectIcons {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    font-size: 3rem;
   }
 }
 
