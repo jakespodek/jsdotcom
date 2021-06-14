@@ -119,6 +119,9 @@ header {
         i {
             margin-left: 2rem;
         }
+        a:focus {
+            color: $themeColor;
+        }
     }
 }
 

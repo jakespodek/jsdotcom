@@ -420,6 +420,10 @@ header li a:focus {
   margin-left: 2rem;
 }
 
+.landing .landingIcons a:focus {
+  color: #39397e;
+}
+
 @-webkit-keyframes arrowDown {
   0% {
     bottom: 20vh;
