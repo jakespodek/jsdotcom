@@ -11,6 +11,10 @@
     // border: 1px solid red;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     // background-color: $paleBrown;
     background-color: $otherBrown;

@@ -285,6 +285,10 @@ ul {
   margin: 0 auto;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #FEF6EE;
 }
