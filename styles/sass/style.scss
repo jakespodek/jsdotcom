@@ -104,6 +104,13 @@ header {
     padding-top: 25vh;
     align-items: center;
     position: relative;
+    .typewriter {
+        border-right: 2px solid transparent;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: typewriter 4s steps(20) 1.5s 1 normal both,
+            blinkCursor 800ms steps(20) 8 normal;
+    }
     .arrow {
         position: absolute;
         bottom: 10vh;
@@ -122,6 +129,27 @@ header {
         a:focus {
             color: $themeColor;
         }
+    }
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 24rem;
+    }
+}
+
+@keyframes blinkCursor{
+    0% {
+        border-right-color: transparent;
+    }
+    50% {
+        border-right-color: $black;
+    }
+    100% {
+        border-right-color: transparent;
     }
 }
 

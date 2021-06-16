@@ -400,6 +400,14 @@ header li a:focus {
   position: relative;
 }
 
+.landing .typewriter {
+  border-right: 2px solid transparent;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: typewriter 4s steps(20) 1.5s 1 normal both, blinkCursor 800ms steps(20) 8 normal;
+          animation: typewriter 4s steps(20) 1.5s 1 normal both, blinkCursor 800ms steps(20) 8 normal;
+}
+
 .landing .arrow {
   position: absolute;
   bottom: 10vh;
@@ -422,6 +430,48 @@ header li a:focus {
 
 .landing .landingIcons a:focus {
   color: #39397e;
+}
+
+@-webkit-keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 24rem;
+  }
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 24rem;
+  }
+}
+
+@-webkit-keyframes blinkCursor {
+  0% {
+    border-right-color: transparent;
+  }
+  50% {
+    border-right-color: #000;
+  }
+  100% {
+    border-right-color: transparent;
+  }
+}
+
+@keyframes blinkCursor {
+  0% {
+    border-right-color: transparent;
+  }
+  50% {
+    border-right-color: #000;
+  }
+  100% {
+    border-right-color: transparent;
+  }
 }
 
 @-webkit-keyframes arrowDown {
