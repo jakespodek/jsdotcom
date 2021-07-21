@@ -93,6 +93,10 @@ header {
         font-weight: bold;
         letter-spacing: 0;
     }
+
+    .mobileNav {
+        display: none;
+    }
 }
 
 /////// LANDING ///////
@@ -611,9 +615,13 @@ footer {
 
 @media (max-width: 666px) {
     header {
-        nav,
+        .desktopNav,
         .navName {
             display: none;
+        }
+        .mobileNav {
+            display: initial;
+            color: red;
         }
     }
     main {

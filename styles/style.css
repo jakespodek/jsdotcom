@@ -383,6 +383,10 @@ header li a:focus {
   letter-spacing: 0;
 }
 
+header .mobileNav {
+  display: none;
+}
+
 .landing {
   background-color: #FAEBD7;
   height: calc(100vh - 6rem);
@@ -1064,9 +1068,13 @@ footer p {
 }
 
 @media (max-width: 666px) {
-  header nav,
+  header .desktopNav,
   header .navName {
     display: none;
+  }
+  header .mobileNav {
+    display: initial;
+    color: red;
   }
   main h1 {
     font-size: 7rem;
