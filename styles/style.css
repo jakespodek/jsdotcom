@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Rubik:wght@700;900&display=swap");
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -332,6 +333,7 @@ p {
 
 header {
   background: #FAEBD7;
+  background: #39397e;
   padding-top: 0;
   height: 6rem;
   line-height: 2;
@@ -356,7 +358,12 @@ header .navName {
           align-items: center;
   font-weight: bold;
   color: #39397e;
+  color: #FAEBD7;
   text-decoration: none;
+  letter-spacing: -3px;
+  font-size: 3rem;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
 }
 
 header ul {
@@ -373,17 +380,31 @@ header li {
 
 header li a {
   letter-spacing: 0.235px;
+  color: #FAEBD7;
 }
 
 header li a:hover,
 header li a:focus {
-  color: #39397e;
   text-decoration: underline;
   font-weight: bold;
   letter-spacing: 0;
 }
 
-header .mobileNav {
+header button {
+  height: 6rem;
+  width: 6rem;
+  border: none;
+  border: 1px solid #39397e;
+  background: #FAEBD7;
+}
+
+header button div {
+  width: 4rem;
+  height: 0.5rem;
+  color: #39397e;
+}
+
+.mobileNav {
   display: none;
 }
 
@@ -402,6 +423,11 @@ header .mobileNav {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+}
+
+.landing h1 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
 }
 
 .landing .typewriter {
@@ -1072,12 +1098,37 @@ footer p {
   header .navName {
     display: none;
   }
-  header .mobileNav {
-    display: initial;
-    color: red;
-  }
   main h1 {
     font-size: 7rem;
+  }
+  .mobileNav {
+    height: 100vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    z-index: 2;
+  }
+  .mobileNav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mobileNav li {
+    margin: 10vh 0;
+  }
+  .mobileNav a {
+    font-size: 4rem;
+    font-weight: bold;
+  }
+  .mobileNav li a:hover,
+  .mobileNav li a:focus {
+    color: #39397e;
+    text-decoration: underline;
   }
   .about .aboutText {
     width: 85%;

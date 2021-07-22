@@ -2,6 +2,8 @@
 @import "./partials/variables";
 @import "./partials/typography";
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Rubik:wght@700;900&display=swap');
+
 
 /////// GLOBAL ///////
 .wrapper {
@@ -60,6 +62,7 @@ p {
 /////// HEADER ///////
 header {
     background: $paleBrown;
+    background: $themeColor;
     padding-top: 0;
     height: 6rem;
     line-height: 2;
@@ -73,7 +76,12 @@ header {
         align-items: center;
         font-weight: bold;
         color: $themeColor;
+        color: $paleBrown;
         text-decoration: none;
+        letter-spacing: -3px;
+        font-size: 3rem;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 700;
     }
     ul {
         padding: 0;
@@ -83,21 +91,36 @@ header {
     li {
         padding-left: 7rem;
         a {
-            letter-spacing: 0.235px
+            letter-spacing: 0.235px;
+            color: $paleBrown;
         }
     }
     li a:hover,
     li a:focus {
-        color: $themeColor;
+        // color: $themeColor;
+        // color: $otherBrown;
         text-decoration: underline;
         font-weight: bold;
         letter-spacing: 0;
     }
-
-    .mobileNav {
-        display: none;
+    button {
+        height: 6rem;
+        width: 6rem;
+        border: none;
+        border: 1px solid $themeColor;
+        background: $paleBrown;
+        div {
+            width: 4rem;
+            height: 0.5rem;
+            color: $themeColor;
+        }
     }
 }
+
+/////// MOBILE NAV ///////
+.mobileNav {
+        display: none;
+    }
 
 /////// LANDING ///////
 .landing {
@@ -108,6 +131,11 @@ header {
     padding-top: 25vh;
     align-items: center;
     position: relative;
+    h1 {
+        font-family: 'Rubik', sans-serif;
+        font-weight: 700;
+
+    }
     .typewriter {
         border-right: 2px solid transparent;
         white-space: nowrap;
@@ -206,6 +234,10 @@ header {
         display: flex;
         align-items: center;
     }
+    // h2 {
+    //     font-family: 'Rubik', sans-serif;
+    //     font-weight: 700;
+    // }
     .headshot {
         width: 60%;
         max-width: 55rem;
@@ -619,16 +651,38 @@ footer {
         .navName {
             display: none;
         }
-        .mobileNav {
-            display: initial;
-            color: red;
-        }
+        // height: 0;
+        // padding: 0;
     }
     main {
         h1 {
             font-size: 7rem;
         }
     }
+    .mobileNav {
+            // display: flex;
+            // background: $paleBrown;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            z-index: 2;
+            ul {
+                flex-direction: column;
+            }
+            li {
+                margin: 10vh 0;
+            }
+            a {
+                font-size: 4rem;
+                font-weight: bold;
+            }
+            li a:hover,
+            li a:focus {
+                color: $themeColor;
+                text-decoration: underline;
+            }
+        }
     .about {
         .aboutText {
             width: 85%;
