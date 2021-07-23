@@ -2,13 +2,13 @@
 @import "./partials/variables";
 @import "./partials/typography";
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
 
 /////// GLOBAL ///////
 .wrapper {
     max-width: 1700px;
     width: 85%;
     margin: 0 auto;
-    // border: 1px solid red;
 }
 
 html {
@@ -59,21 +59,36 @@ p {
 
 /////// HEADER ///////
 header {
-    background: $paleBrown;
+    background: $themeColor;
     padding-top: 0;
     height: 6rem;
     line-height: 2;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    :first-child {
+    transition: height 0.4s;
+    position: relative;
+    nav {
         display: flex;
         justify-content: space-between;
     }
     .navName {
-        display: flex;
-        align-items: center;
+        height: 6rem;
         font-weight: bold;
-        color: $themeColor;
+        color: $paleBrown;
         text-decoration: none;
+        letter-spacing: -3px;
+        font-size: 3rem;
+    }
+    .fa-bars,
+    .fa-times {
+        display: none;
+        color: $paleBrown;
+        font-size: 2.8rem;
+        cursor: pointer;
+        position: absolute;
+        right: 7.5%;
+        top: 14px;
+    }
+    .fa-times {
+        font-size: 3rem;
     }
     ul {
         padding: 0;
@@ -83,12 +98,12 @@ header {
     li {
         padding-left: 7rem;
         a {
-            letter-spacing: 0.235px
+            letter-spacing: 0.235px;
+            color: $paleBrown;
         }
     }
     li a:hover,
     li a:focus {
-        color: $themeColor;
         text-decoration: underline;
         font-weight: bold;
         letter-spacing: 0;
@@ -501,7 +516,7 @@ footer {
             padding-left: 4rem;
         }
         nav a {
-            font-size: 1.6rem;
+            font-size: 1.8rem;
         }
     }
     .skills {
@@ -611,9 +626,27 @@ footer {
 
 @media (max-width: 666px) {
     header {
-        nav,
-        .navName {
+        ul {
             display: none;
+            // flex-direction: column;
+        }
+        .mobileNavShow {
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+            align-items: center;
+            margin-top: 10vh;
+            li {
+                padding: 0;
+                margin-right: 18.5px;
+                a {
+                    font-size: 2.6rem;
+                    line-height: 3;
+                }
+            }
+        }
+        .fa-bars {
+            display: block;
         }
     }
     main {
@@ -680,7 +713,7 @@ footer {
     }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 460px) {
     main {
         h1 {
             font-size: 5rem;

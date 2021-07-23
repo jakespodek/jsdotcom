@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap");
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -252,6 +253,12 @@ h3 {
 
 h1 {
   font-size: 10rem;
+  color: #39397e;
+}
+
+h1,
+.navName {
+  font-family: 'Rubik', sans-serif;
 }
 
 h2 {
@@ -331,14 +338,16 @@ p {
 }
 
 header {
-  background: #FAEBD7;
+  background: #39397e;
   padding-top: 0;
   height: 6rem;
   line-height: 2;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  -webkit-transition: height 0.4s;
+  transition: height 0.4s;
+  position: relative;
 }
 
-header :first-child {
+header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -348,15 +357,27 @@ header :first-child {
 }
 
 header .navName {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  height: 6rem;
   font-weight: bold;
-  color: #39397e;
+  color: #FAEBD7;
   text-decoration: none;
+  letter-spacing: -3px;
+  font-size: 3rem;
+}
+
+header .fa-bars,
+header .fa-times {
+  display: none;
+  color: #FAEBD7;
+  font-size: 2.8rem;
+  cursor: pointer;
+  position: absolute;
+  right: 7.5%;
+  top: 14px;
+}
+
+header .fa-times {
+  font-size: 3rem;
 }
 
 header ul {
@@ -373,11 +394,11 @@ header li {
 
 header li a {
   letter-spacing: 0.235px;
+  color: #FAEBD7;
 }
 
 header li a:hover,
 header li a:focus {
-  color: #39397e;
   text-decoration: underline;
   font-weight: bold;
   letter-spacing: 0;
@@ -959,7 +980,7 @@ footer p {
     padding-left: 4rem;
   }
   header nav a {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
   .skills .skillsIcons {
     width: 80%;
@@ -1064,9 +1085,33 @@ footer p {
 }
 
 @media (max-width: 666px) {
-  header nav,
-  header .navName {
+  header ul {
     display: none;
+  }
+  header .mobileNavShow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100vw;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 10vh;
+  }
+  header .mobileNavShow li {
+    padding: 0;
+    margin-right: 18.5px;
+  }
+  header .mobileNavShow li a {
+    font-size: 2.6rem;
+    line-height: 3;
+  }
+  header .fa-bars {
+    display: block;
   }
   main h1 {
     font-size: 7rem;
@@ -1116,7 +1161,7 @@ footer p {
   }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 460px) {
   main h1 {
     font-size: 5rem;
   }
