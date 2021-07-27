@@ -45,18 +45,3 @@ const closeMobileNav = (wideScreen) => {
 wideScreen.addEventListener("change", () => {
     closeMobileNav(wideScreen);
 })
-
-// to do:
-    // position everything properly
-    // change bars to an x when nav is open
-    // make it so things still work if user changes screen width while nav is open
-    // header position absolute at the top?
-
-// on hambgurger click:
-    // extend height of header down
-    // show nav menu vertically
-    // change hamburger to an X
-
-    // non-icon bars: middle line is a div, top and bottom are before/after elements
-    // look at Evan's github
-    // Nicole's
