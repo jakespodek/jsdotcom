@@ -309,6 +309,13 @@ header {
             box-shadow: 3rem 2rem $themeColor, 3rem 1rem $themeColor, 5rem 2rem 1.5rem -0.5rem rgba(0, 0, 0, 0.5);
             border-radius: 3rem 1rem 3rem 1rem;
         }
+        .chatAppImage {
+            border-radius: 1rem;
+            img {
+                border-radius: 1.5rem;
+                border: 1rem solid $themeColor;
+            }
+        }
         .projectText {
             width: 60%;
             padding: 6rem;
@@ -539,7 +546,8 @@ footer {
                 padding: 6rem 6rem 1rem 6rem;
             }
         }
-        .covidPositive {
+        .covidPositive,
+        .chatApp {
             flex-direction: column-reverse;
         }
     }

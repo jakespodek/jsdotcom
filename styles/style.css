@@ -702,6 +702,15 @@ header li a:focus {
   border-radius: 3rem 1rem 3rem 1rem;
 }
 
+.projects .project .chatAppImage {
+  border-radius: 1rem;
+}
+
+.projects .project .chatAppImage img {
+  border-radius: 1.5rem;
+  border: 1rem solid #39397e;
+}
+
 .projects .project .projectText {
   width: 60%;
   padding: 6rem;
@@ -1002,7 +1011,8 @@ footer p {
     width: 100%;
     padding: 6rem 6rem 1rem 6rem;
   }
-  .projects .covidPositive {
+  .projects .covidPositive,
+  .projects .chatApp {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
