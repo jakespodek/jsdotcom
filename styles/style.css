@@ -549,16 +549,6 @@ header li a:focus {
   }
 }
 
-.asteroid {
-  color: #39397e;
-  display: inline;
-  display: none;
-}
-
-.asteroid svg {
-  width: 10rem;
-}
-
 .about {
   background-color: transparent;
   min-height: 100vh;
