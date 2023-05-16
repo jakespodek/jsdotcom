@@ -68,7 +68,8 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 300px;
+  width: 25vw;
+  min-width: 300px;
   margin: 20px 0;
 }
 .allTheStuff .message .contactForm input,
