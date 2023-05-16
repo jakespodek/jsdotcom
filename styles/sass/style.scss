@@ -11,6 +11,19 @@ body {
     position: relative;
 }
 
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 a {
     color: #FFC627;
     text-decoration: none;
@@ -63,6 +76,11 @@ a {
             font-weight: 400;
         }
     }
+
+    // .contact {
+    //     border: 1px solid red;
+    //     display: block;
+    // }
     
 }
 
