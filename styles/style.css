@@ -72,8 +72,7 @@ a {
   margin: 20px 0;
 }
 .allTheStuff .message .contactForm input,
-.allTheStuff .message .contactForm textarea,
-.allTheStuff .message .contactForm button {
+.allTheStuff .message .contactForm textarea {
   border: 1px solid #FFC627;
   border-radius: 2px;
   background: rgb(49, 48, 48);
@@ -85,19 +84,19 @@ a {
   padding-left: 5px;
 }
 .allTheStuff .message .contactForm input::-webkit-input-placeholder, .allTheStuff .message .contactForm textarea::-webkit-input-placeholder {
-  font-size: 16px;
+  font-size: 18px;
   font-family: "Kanit", sans-serif;
 }
 .allTheStuff .message .contactForm input::-moz-placeholder, .allTheStuff .message .contactForm textarea::-moz-placeholder {
-  font-size: 16px;
+  font-size: 18px;
   font-family: "Kanit", sans-serif;
 }
 .allTheStuff .message .contactForm input:-ms-input-placeholder, .allTheStuff .message .contactForm textarea:-ms-input-placeholder {
-  font-size: 16px;
+  font-size: 18px;
   font-family: "Kanit", sans-serif;
 }
 .allTheStuff .message .contactForm input::-ms-input-placeholder, .allTheStuff .message .contactForm textarea::-ms-input-placeholder {
-  font-size: 16px;
+  font-size: 18px;
   font-family: "Kanit", sans-serif;
 }
 .allTheStuff .message .contactForm input,
@@ -105,12 +104,11 @@ a {
 .allTheStuff .message .contactForm textarea,
 .allTheStuff .message .contactForm textarea::placeholder,
 .allTheStuff .message .contactForm button {
-  font-size: 16px;
+  font-size: 18px;
   font-family: "Kanit", sans-serif;
 }
-.allTheStuff .message .contactForm input,
-.allTheStuff .message .contactForm button {
-  width: 50%;
+.allTheStuff .message .contactForm input {
+  width: 66.7%;
   height: 30px;
 }
 .allTheStuff .message .contactForm textarea {
@@ -118,10 +116,21 @@ a {
 }
 .allTheStuff .message .contactForm button {
   cursor: pointer;
+  border-radius: 2px;
+  width: 50%;
+  height: 30px;
+  border: 1px solid rgb(202, 202, 202);
+  color: rgb(49, 48, 48);
+  background: rgb(202, 202, 202);
+}
+.allTheStuff .message .contactForm button:hover {
+  background: #FFC627;
+  border: 1px solid #FFC627;
+  color: rgb(49, 48, 48);
 }
 .allTheStuff .message .thanks {
   margin: 0;
-  height: 108.5px;
+  height: 290px;
   color: #FFC627;
 }
 .allTheStuff .headers {
