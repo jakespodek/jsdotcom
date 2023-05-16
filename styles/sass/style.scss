@@ -53,6 +53,14 @@ a {
         // padding: 50px;
         line-height: 1.6;
         font-size: 30px;
+        h3 {
+            margin-bottom: 0;
+        }
+        .thanks {
+            margin: 0;
+            height: 108.5px;
+            color: #FFC627;
+        }
         
     }
 
@@ -76,11 +84,6 @@ a {
             font-weight: 400;
         }
     }
-
-    // .contact {
-    //     border: 1px solid red;
-    //     display: block;
-    // }
     
 }
 
